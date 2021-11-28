@@ -10,7 +10,7 @@
 */
 
 function findVowels(str) {
-    // Напишите код здесь
+    return str.split('').filter((letter) => letter.search(/[аяоёуюыиэе]/gi) !== -1).length;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

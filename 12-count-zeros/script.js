@@ -7,7 +7,11 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+    let countZeros = 0;
+    for (let num = 1; num <= n; num++) {
+        countZeros += num.toString().split('').filter((digit) => digit === '0').length;
+    }
+    return countZeros;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
